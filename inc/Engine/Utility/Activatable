@@ -1,0 +1,20 @@
+
+#ifndef POKEMONPINK_ACTIVATABLE_H
+#define POKEMONPINK_ACTIVATABLE_H
+
+namespace J2AE
+{
+	class Activatable
+	{
+	public:
+		virtual ~Activatable() = default;
+		virtual void activate() = 0;
+		virtual void deactivate() = 0;
+		virtual bool isActive() const = 0;
+
+	protected:
+		Activatable() = default;
+	};
+}
+
+#endif
